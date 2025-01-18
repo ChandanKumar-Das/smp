@@ -4,7 +4,7 @@ import { PhoneIcon } from '@heroicons/react/24/solid';
 
 export default function Navbar() {
   return (
-    <div className="bg-blue-700 p-4 sticky top-0 z-50">
+    <div className="bg-blue-700 p-4  z-50">
       {/* Container */}
       <div className="max-w-[1200px] mx-auto">
         {/* Top Section */}
@@ -29,7 +29,7 @@ export default function Navbar() {
         </div>
 
         {/* Navigation Links */}
-        <div>
+        <div >
           <ul className="flex flex-wrap justify-center md:justify-between items-center text-white uppercase pt-2 font-bold space-y-2 md:space-y-0">
             <li className="px-4">About Us</li>
             <li className="px-4">Service</li>

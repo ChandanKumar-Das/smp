@@ -1,9 +1,12 @@
+import Customer from "../../components/landing/Customers";
+import DigitalGrowth from "../../components/landing/Digital-Growth";
 import HappyClient from "../../components/landing/happy-client";
 import Hero from "../../components/landing/Hero";
 import HighlyConverting from "../../components/landing/Highly-converting";
 import LosingInquiries from "../../components/landing/Losing-Inquiries";
 import MarketingSolution from "../../components/landing/marketing-solution";
 import Navbar from "../../components/landing/Navbar";
+import OnlineTime from "../../components/landing/Online";
 import OnlyChoice from "../../components/landing/only-choice";
 
 export default function Home() {
@@ -16,6 +19,9 @@ export default function Home() {
    <HighlyConverting/>
    <OnlyChoice/>
    <LosingInquiries/>
+   <OnlineTime/>
+   <DigitalGrowth/>
+   <Customer/>
    </>
   );
 }
