@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function DigitalGrowth() {
   return (
     <>
-      <div className="bg-[#011833] pb-10 pt-[200px] sm:pt-[300px] lg:pt-[500px]">
+      <div className="bg-[#011833] pb-10  sm:pt-[300px] lg:pt-[500px]">
         <div className="max-w-[1200px] mx-auto px-4">
           {/* Heading Section */}
           <div className="flex justify-center">
