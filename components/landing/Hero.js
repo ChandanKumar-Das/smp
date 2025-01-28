@@ -14,7 +14,7 @@ export default function Hero() {
 
   return (
     <>
-      <div className="bg-blue-100 p-4">
+      <div className="bg-blue-700 p-4">
         <div className="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center">
           {/* Left Section */}
           <div className="mt-12 lg:mt-24 flex-1">
