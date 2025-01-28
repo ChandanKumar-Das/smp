@@ -15,8 +15,8 @@ export default function ScrollNavbar(){
         if( name === 'team'){
           router.push('/team')
         }
-        if( name === 'servics'){
-          router.push('/servics')
+        if( name === 'services'){
+          router.push('/services')
         }
           
       };
@@ -49,7 +49,7 @@ export default function ScrollNavbar(){
         <ul className="absolute top-full left-0 bg-gray-100 hidden rounded-md  group-hover:flex p-4 flex-col gap-4 min-w-[200px] max-w-[300px] items-center">
         <li onClick={()=>handleClick('ourcompany')} className=" text-blue-500 hover:text-gray-700 text-md">Our Company</li>
         <li onClick={()=>handleClick('team')} className="text-blue-500 hover:text-gray-700 text-md">Our Team</li>
-        <li onClick={()=>handleClick('servics')} className="text-blue-500 hover:text-gray-700 text-md">Reviews</li>
+        <li onClick={()=>handleClick('services')} className="text-blue-500 hover:text-gray-700 text-md">Reviews</li>
         </ul>
         </li>
           <li className="px-4">Service</li>
