@@ -1,14 +1,15 @@
- "use client"
+
+"use client"
 import Image from 'next/image';
 import { PhoneIcon } from '@heroicons/react/24/solid';
-import ScrollNavbar from './scrollNavbar';
+import ScrollNavbar from '../landing/scrollNavbar';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 //import { useRouter } from 'next/router';
 import { useRouter } from "next/navigation"
 
 
 
-export default function Navbar() {
+export default function DynamicNavbar() {
   const router = useRouter();
 
 
@@ -29,7 +30,7 @@ export default function Navbar() {
   
   return (
     <>
-    <div className="bg-blue-700 p-4 ">
+    <div className="w-full float-left bg-custom-bg h-full bg-cover pt-8  pb-[15%] bg-center bg-no-repeat">
       {/* Container */}
       <div className="max-w-[1200px] mx-auto">
         {/* Top Section */}
@@ -77,6 +78,10 @@ export default function Navbar() {
               Request a Free Strategy Session
             </li>
           </ul>
+        </div>
+
+        <div className='flex justify-center px-4 pt-10 '>
+            <p className='text-6xl font-semibold text-white text-center leading-[1.2]'>Changing the way every Safari Company feels about gaining customers.</p>
         </div>
       </div>
     </div>
