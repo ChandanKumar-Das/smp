@@ -1,8 +1,9 @@
 "use client"
 
-import image from '../../public/webpic.png'
+
 export default function Footer() {
     return (
+      <>
       <footer className="bg-blue-600 text-white">
         <div className="container max-w-[1200px] mx-auto py-10 px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -129,6 +130,7 @@ export default function Footer() {
           </div>
         </div>
       </footer>
+      </>
     );
   }
   

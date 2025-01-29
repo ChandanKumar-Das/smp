@@ -20,6 +20,10 @@ export default function ScrollNavbar(){
         }
           
       };
+
+      function hanhelImageClick(){
+        router.push('/')
+      }
       
     return(
         <>
@@ -32,6 +36,7 @@ export default function ScrollNavbar(){
         <ul className="flex flex-wrap justify-center md:justify-between items-center text-white uppercase pt-2 font-bold space-y-2 md:space-y-0">
           <li>
             <Image
+             onClick={hanhelImageClick}
               src="https://safarimarketingpro.com/images/smp-logo.png"
               alt="logo"
               width={150}

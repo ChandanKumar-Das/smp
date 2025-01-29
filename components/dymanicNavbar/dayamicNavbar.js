@@ -4,7 +4,7 @@ import { PhoneIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
 import ScrollNavbar from "../landing/scrollNavbar";
 import { useRouter } from "next/navigation";
 
-export default function DynamicNavbar() {
+export default function DynamicNavbar({image,content,content2}) {
   const router = useRouter();
 
   const handleClick = (name) => {
@@ -23,12 +23,19 @@ export default function DynamicNavbar() {
     }
   };
 
+  function hanhelImageClick(){
+    router.push('/')
+  }
   return (
     <>
       {/* Background Section */}
       <ScrollNavbar/>
 
-      <div className="w-full bg-custom-bg h-full bg-cover pt-8 pb-[13%] bg-center bg-no-repeat">
+      <div    style={{
+    background: `linear-gradient(to right, #0057ffd6 40%, #4679c587 80%, rgb(70 121 197 / 33%) 100%), url(${image})`, // Replace with your image URL
+    backgroundSize: "cover", 
+  }}
+  className="w-full bg-custom-bg h-[500px] bg-cover pt-8 pb-6 bg-center bg-no-repeat">
         {/* Main Container */}
         <div className="max-w-[1200px] mx-auto">
           {/* Top Section */}
@@ -36,6 +43,7 @@ export default function DynamicNavbar() {
             {/* Logo */}
             <div className="mb-2 md:mb-0">
               <Image
+              onClick={hanhelImageClick}
                 src="https://safarimarketingpro.com/images/smp-logo.png"
                 alt="logo"
                 width={150}
@@ -98,10 +106,12 @@ export default function DynamicNavbar() {
             </ul>
           </div>
           {/* Header Text */}
-          <div className="flex justify-center px-4 pt-10">
-            <p className="text-6xl font-semibold text-white text-center leading-[1.2]">
-              Changing the way every Safari Company feels about gaining
-              customers.
+          <div className="flex justify-center flex-col gap-6 px-4 pt-10">
+            <p className="text-5xl font-semibold text-white text-center leading-[1.2]">
+             {content}
+            </p>
+            <p className="text-xl font-semibold text-white text-center leading-[1.2]">
+              {content2}
             </p>
           </div>
         </div>
