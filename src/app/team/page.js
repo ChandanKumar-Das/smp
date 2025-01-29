@@ -15,9 +15,9 @@ export default function Team(){
     return(
         <>
         <DynamicNavbar image={headerData.image} content={headerData.content1} content2={headerData.content2}/>
-        <First/>
-       <NotCharge/>
-       <Footer/>
+        {/* <First/> */}
+       {/* <NotCharge/> */}
+       {/* <Footer/> */}
         </>
     )
 }
