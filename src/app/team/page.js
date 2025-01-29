@@ -1,4 +1,7 @@
 import DynamicNavbar from "../../../components/dymanicNavbar/dayamicNavbar";
+import Footer from "../../../components/landing/footer";
+import NotCharge from "../../../components/landing/NotCharge";
+import OnlineTime from "../../../components/landing/Online";
 import First from "../../../components/team/fast";
 
 
@@ -12,7 +15,9 @@ export default function Team(){
     return(
         <>
         <DynamicNavbar image={headerData.image} content={headerData.content1} content2={headerData.content2}/>
-        {/* <First/> */}
+        <First/>
+       <NotCharge/>
+       <Footer/>
         </>
     )
 }

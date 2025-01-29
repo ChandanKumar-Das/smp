@@ -31,7 +31,7 @@ export default function DynamicNavbar({image,content,content2}) {
       {/* Background Section */}
       <ScrollNavbar/>
 
-      <div    style={{
+      <div  style={{
     background: `linear-gradient(to right, #0057ffd6 40%, #4679c587 80%, rgb(70 121 197 / 33%) 100%), url(${image})`, // Replace with your image URL
     backgroundSize: "cover", 
   }}
