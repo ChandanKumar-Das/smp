@@ -4,6 +4,7 @@ import { PhoneIcon, ChevronDownIcon } from "@heroicons/react/24/solid";
 import ScrollNavbar from "../landing/scrollNavbar";
 import { useRouter } from "next/navigation";
 
+
 export default function DynamicNavbar({image,content,content2}) {
   const router = useRouter();
 
@@ -35,7 +36,7 @@ export default function DynamicNavbar({image,content,content2}) {
     background: `linear-gradient(to right, #0057ffd6 40%, #4679c587 80%, rgb(70 121 197 / 33%) 100%), url(${image})`, // Replace with your image URL
     backgroundSize: "cover", 
   }}
-  className="w-full bg-custom-bg h-[500px] bg-cover pt-8 pb-6 bg-center bg-no-repeat">
+  className="w-full bg-custom-bg h-[500px] bg-cover pt-8 pb-6 bg-center bg-no-repeat ">
         {/* Main Container */}
         <div className="max-w-[1200px] mx-auto">
           {/* Top Section */}
@@ -107,10 +108,10 @@ export default function DynamicNavbar({image,content,content2}) {
           </div>
           {/* Header Text */}
           <div className="flex justify-center flex-col gap-6 px-4 pt-10">
-            <p className="text-5xl font-semibold text-white text-center leading-[1.2]">
+            <p className="font-montserrat  font-bold text-[48px] text-center capitalize text-white leading-[1.4]">
              {content}
             </p>
-            <p className="text-xl font-semibold text-white text-center leading-[1.2]">
+            <p className="font-montserrat  text-[18px] font-weight-500  text-white text-center leading-[1.2]">
               {content2}
             </p>
           </div>

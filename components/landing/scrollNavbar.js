@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 import { useRouter } from "next/navigation"
 export default function ScrollNavbar(){
-    const { isScrolled} = useScroll();
+    const { isScrolled } = useScroll();
     const router = useRouter();
     const handleClick = (name) => {
 
@@ -34,12 +34,12 @@ export default function ScrollNavbar(){
     >
       <div className="max-w-[1200px] mx-auto">
         <ul className="flex flex-wrap justify-center md:justify-between items-center text-white uppercase pt-2 font-bold space-y-2 md:space-y-0">
-          <li>
+          <li className='pr-8'>
             <Image
              onClick={hanhelImageClick}
               src="https://safarimarketingpro.com/images/smp-logo.png"
               alt="logo"
-              width={150}
+              width={80}
               height={50}
               className="white-image"
               style={{ filter: 'brightness(0) invert(1)' }}

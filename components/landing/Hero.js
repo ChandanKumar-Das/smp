@@ -40,7 +40,7 @@ export default function Hero() {
                 </datalist>
               </div>
 
-              <div className="mt-4 sm:mt-0 sm:ml-4 py-3 px-8 sm:px-10 bg-red-600 font-bold text-lg sm:text-xl text-white rounded-md cursor-pointer hover:bg-red-700">
+              <div className="mt-4 uppercase sm:mt-0 sm:ml-4 py-3 px- sm:px-10 bg-red-600 font-bold text-lg sm:text-xl text-white rounded-md cursor-pointer hover:bg-red-700">
                 Get a Free Quote
               </div>
             </div>

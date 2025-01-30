@@ -5,7 +5,7 @@ export default function Fifth(){
         <>
         <div>
             <div className="max-w-[1200px] mx-auto py-10"> 
-                <h1 className="text-4xl font-bold">Awards We’ve Won</h1>
+                <h1 className="text-[34px]  font800">Awards We’ve Won</h1>
             <div className=" grid grid-cols-3 gap-10 mt-14">
              <div>
              {[

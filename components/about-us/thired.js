@@ -79,10 +79,10 @@ export default function Thired() {
       <div className="bg-gray-100 py-16 px-4">
         <div className="max-w-[1200px] mx-auto text-center">
           {/* Heading */}
-          <h2 className="text-4xl font-bold text-blue-600">
+          <h2 className="font-montserrat font700 text-[48px] text-center text-[#3467d8] leading-[1.3] m-0 px-[10%] pb-[15px]">
             SMP In Comparison To Other Marketing Agencies
           </h2>
-          <p className="text-gray-500 text-lg mt-2">
+          <p className="text-[#787878] font400 text-[22px] mt-2">
             Educate Your Customers To Learn More
           </p>
   
@@ -91,13 +91,13 @@ export default function Thired() {
             <table className="w-full border-collapse rounded-lg shadow-lg">
               <thead>
                 <tr>
-                  <th className="bg-[#041431] border-b text-white px-6 py-4 text-lg font-semibold">
+                  <th className="bg-[#041431] border-b font600 text-white px-10 py-10 text-[20px] ">
                     SPECIFICATIONS
                   </th>
-                  <th className="bg-[#0057FF] text-white px-6 py-4 text-lg font-semibold">
+                  <th className="bg-[#0057FF] text-[20px] text-white font600 px-10 py-10  ">
                     SAFARI MARKETING PRO
                   </th>
-                  <th className="bg-[#FF4F4F] text-white px-6 py-4 text-lg font-semibold">
+                  <th className="bg-[#FF4F4F] text-[20px] text-white font600 px-10 py-10  ">
                     OTHER AGENCIES
                   </th>
                 </tr>
@@ -106,12 +106,12 @@ export default function Thired() {
                 {
                     tableData.map((item,_)=>(
                         <tr key={item.id} className="bg-[#041431] border-b text-white">
-                        <td className="px-6 py-4 font-semibold">{item.SPECIFICATIONS}</td>
-                        <td className="bg-[#EAF2FF] px-6 py-4 text-gray-700">
+                        <td className="px-10 py-10 font600 text-[20px]">{item.SPECIFICATIONS}</td>
+                        <td className="bg-[#EAF2FF] text-left  px-6 py-4 text-[#626262]">
                           <span className="text-green-500 mr-2">✔</span>
                          {item.SAFARIMARKETINGPRO}
                         </td>
-                        <td className="bg-[#FAE1E1] px-6 py-4 text-gray-700">
+                        <td className="bg-[#FAE1E1] text-left text-[17px] px-6 py-4 text-[#626262]">
                           <span className="text-red-500 mr-2">✘</span>
                           {item.OTHERAGENCIES}
                         </td>
