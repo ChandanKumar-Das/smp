@@ -4,37 +4,38 @@
 export default function Footer() {
     return (
       <>
-      <footer className="bg-blue-600 text-white">
+      <footer >
+        <div className="bg-[#3467d8] text-white">
         <div className="container max-w-[1200px] mx-auto py-10 px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Useful Links */}
             <div>
               <h3 className="text-lg font-semibold mb-4">USEFUL LINKS</h3>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:underline">Website Designing</a></li>
-                <li><a href="#" className="hover:underline">Organic Marketing</a></li>
-                <li><a href="#" className="hover:underline">Google Advertising</a></li>
-                <li><a href="#" className="hover:underline">Content Marketing</a></li>
-                <li><a href="#" className="hover:underline">Social Media Marketing</a></li>
-                <li><a href="#" className="hover:underline">Pricing</a></li>
-                <li><a href="#" className="hover:underline">Ebooks</a></li>
-                <li><a href="#" className="hover:underline">Contact Us</a></li>
-                <li><a href="#" className="hover:underline">Blog</a></li>
+                <li><a href="#" className="hover:underline pb-4">Website Designing</a></li>
+                <li><a href="#" className="hover:underline pb-4">Organic Marketing</a></li>
+                <li><a href="#" className="hover:underline pb-4">Google Advertising</a></li>
+                <li><a href="#" className="hover:underline pb-4">Content Marketing</a></li>
+                <li><a href="#" className="hover:underline pb-4">Social Media Marketing</a></li>
+                <li><a href="#" className="hover:underline pb-4">Pricing</a></li>
+                <li><a href="#" className="hover:underline pb-4">Ebooks</a></li>
+                <li><a href="#" className="hover:underline pb-4">Contact Us</a></li>
+                <li><a href="#" className="hover:underline pb-0">Blog</a></li>
               </ul>
             </div>
   
             {/* Contacts */}
             <div>
               <h3 className="text-lg font-semibold mb-4">CONTACTS</h3>
-              <p className="mb-2">
-                <strong className='font-bold text-xl'>Safari Marketing Pro</strong><br />
+              <p className="mb-4">
+                <strong className='font-bold text-xl pb-4'>Safari Marketing Pro</strong><br />
                 Plot No- 26.1996/2231, Arundhati Resident,<br />
                 B2, Patrapada, 751019
               </p>
-              <p className="mb-2"><strong>CALL</strong>: +91-6371-223-581</p>
-              <p className="mb-2"><strong>EMAIL</strong>: <a href="mailto:sales@manoramaseoservice.com" className="text-white underline">sales@manoramaseoservice.com</a></p>
-              <h4 className="mt-4 font-semibold">LOVE US AS WE LOVE YOU!</h4>
-              <div className="flex space-x-4 mt-2">
+              <p className="mb-4"><strong>CALL</strong>: +91-6371-223-581</p>
+              <p className="mb-4"><strong>EMAIL</strong>: <a href="mailto:sales@manoramaseoservice.com" className="text-white underline">sales@manoramaseoservice.com</a></p>
+              <h4 className="mt-6 font-semibold">LOVE US AS WE LOVE YOU!</h4>
+              <div className="flex space-x-4 mt-4">
                 <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook" className="w-10" /></a>
                 <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" className="w-10" /></a>
                 <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" className="w-10" /></a>
@@ -61,7 +62,7 @@ export default function Footer() {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h3 className="text-lg text-gray-500 font-semibold">Manorama Web Solutions</h3>
+          <h3 className="text-md text-gray-500 font-semibold">Manorama Web Solutions</h3>
           <p className="text-sm text-gray-500">Private Limited Reviews</p>
         </div>
         <img
@@ -117,8 +118,13 @@ export default function Footer() {
             </div>
           </div>
   
-          {/* Bottom Footer */}
-          <div className="border-t border-blue-500 mt-6 pt-6 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+         
+        </div>
+        </div>
+
+        <div className="bg-blue-700 text-white ">
+           {/* Bottom Footer */}
+           <div className="max-w-[1200px] mx-auto py-4 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center">
             <p>&copy; 2025 Safari Marketing Pro</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:underline">Privacy Policy</a>
@@ -129,7 +135,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        
       </footer>
+
+      
       </>
     );
   }

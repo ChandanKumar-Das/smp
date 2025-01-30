@@ -4,11 +4,11 @@ export default function Service(){
         <>
          <div>
             <div className="max-w-[1000px] mx-auto py-10">
-                <h1 className="font-bold px-[10%] text-center text-5xl text-blue-500">See What Our Clients Are Saying
+                <h1 className="font700 px-[10%] text-center text-[48px] text-[#3467d8]">See What Our Clients Are Saying
                 About Our Services
                 </h1>
               <div className="flex justify-between mt-16">
-                <h1 className="text-2xl">Manorama Web Solutions Private Limited Reviews</h1>
+                <h1 className="text-xl hover:underline text-[#17313b] font500">Manorama Web Solutions Private Limited Reviews</h1>
                 <div className="flex items-center">
                     <div className="text-xl pr-2">4.9</div>
                     <div className="flex items-center space-x-">

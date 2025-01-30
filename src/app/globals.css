@@ -56,5 +56,16 @@
  }
 
 
-
-  
+ .some-element::after {
+  content: '';
+  position: absolute;
+  right: -1%;
+  top: 0;
+  width: 22%;
+  height: 50%;
+  background: url('https://safarimarketingpro.com/images/smp-whphrd-sec-bg.png') no-repeat left top transparent;
+  background-size: 100% 100%;
+  opacity: 1;
+  transition: background .3s, border-radius .3s, opacity .3s;
+  z-index: 0;
+}

@@ -5,11 +5,11 @@ export default function NotCharge() {
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex flex-col md:flex-row md:justify-end space-y-6 md:space-y-0">
             <div className="md:w-1/2 space-y-6">
-              <h1 className="text-4xl font-bold text-white">
+              <h1 className="text-[40px] leading-[1.2] font-bold text-white">
                 We Don’t Charge To Educate Our Customers
               </h1>
-              <p className="text-white text-sm md:text-md">
-                Customer Education accelerates growth throughout the customer journey...
+              <p className="font-montserrat font-light text-[17px] leading-[1.5] text-white text-left">
+              Customer Education accelerates growth throughout the customer journey. We are a friendly bunch and would love to hear from you. Fill out the form below and we will be in touch.
               </p>
 
               {/* Form Wrapper */}

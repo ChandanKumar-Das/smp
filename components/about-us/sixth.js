@@ -25,21 +25,21 @@ export default function Sixth() {
   }, []);
 
   return (
-    <div className="bg-blue-500 text-white">
+    <div className="bg-[#4679c5] text-white">
       <div className="max-w-7xl mx-auto py-14 px-4 md:px-8">
         {/* Heading Section */}
-        <h2 className="text-center text-3xl md:text-5xl pb-4 font-bold">
-          We rise by Lifting others
+        <h2 className="text-center text-3xl  md:text-[48px] pb-4 font700">
+          We Rise By Lifting Others
         </h2>
-        <h4 className="text-center text-lg md:text-2xl font-semibold">
+        <h4 className="text-center text-lg py-6 md:text-[22px] font500">
           Because when we give, we also receive
         </h4>
 
         {/* Content Section */}
         <div className="flex flex-col lg:flex-row gap-10 items-center mt-6">
           {/* Text Content */}
-          <div className="lg:w-6/12 space-y-4">
-            <p className="text-lg md:text-xl leading-relaxed">
+          <div className="lg:w-5/12 space-y-4">
+            <p className="text-lg md:text-[18px] leading-relaxed">
               Imagine a world where every single person on the planet is given
               free access to the sum of all human needs. In Safari Marketing Pro,{" "}
               <span className="font-bold">
@@ -66,7 +66,7 @@ export default function Sixth() {
               <img
                 src={images[index]}
                 alt={`Slide ${index}`}
-                className="max-w-full max-h-full object-contain  "
+                //className="max-w-full max-h-full object-contain  "
               />
             </div>
           </div>

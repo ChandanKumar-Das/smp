@@ -30,7 +30,7 @@ export default function ScrollNavbar(){
         <div
       className={`transition-all duration-500 ease-in-out py-2 ${
         isScrolled ? "sticky-nav sticky top-0 left-0 slide-down" : "absolute top-0 left-0 hidden"
-      } bg-blue-600 z-[99]`}
+      } bg-[#0057ff] z-[99]`}
     >
       <div className="max-w-[1200px] mx-auto">
         <ul className="flex flex-wrap justify-center md:justify-between items-center text-white uppercase pt-2 font-bold space-y-2 md:space-y-0">
@@ -46,15 +46,15 @@ export default function ScrollNavbar(){
               priority
             />
           </li>
-          <li className="px-4 cursor-pointer flex items-center gap-2 group relative ">
+          <li className="px-4 cursor-pointer flex items-center gap-2 group relative hover:text-red-500 ">
         About Us
         <span>
-          <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180" />
+          <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180 group-hover:text-red-500" />
         </span>
         <ul className="absolute top-full left-0 bg-gray-100 hidden rounded-md  group-hover:flex p-4 flex-col gap-4 min-w-[200px] max-w-[300px] items-center">
-        <li onClick={()=>handleClick('ourcompany')} className=" text-blue-500 hover:text-gray-700 text-md">Our Company</li>
-        <li onClick={()=>handleClick('team')} className="text-blue-500 hover:text-gray-700 text-md">Our Team</li>
-        <li onClick={()=>handleClick('services')} className="text-blue-500 hover:text-gray-700 text-md">Reviews</li>
+        <li onClick={()=>handleClick('ourcompany')} className=" text-[#4679c5] hover:text-red-500 text-[14px] font600">Our Company</li>
+        <li onClick={()=>handleClick('team')} className="text-[#4679c5] hover:text-red-500 text-[14px] font600">Our Team</li>
+        <li onClick={()=>handleClick('services')} className="text-[#4679c5] hover:text-red-500 text-[14px] font600">Reviews</li>
         </ul>
         </li>
           <li className="px-4">Service</li>
@@ -62,7 +62,7 @@ export default function ScrollNavbar(){
           <li className="px-4">Our Clients</li>
           <li className="px-4">Training</li>
           <li className="px-4">Resources</li>
-          <li className="bg-red-500 p-2 md:p-4 shadow-sm rounded-md text-center">
+          <li className="p-2 cursor-pointer md:p-4 shadow-sm bg-[#ff5254] hover:text-red-500 rounded-md text-center hover:bg-black transition duration-300">
             Request a Free Strategy Session
           </li>
         </ul>

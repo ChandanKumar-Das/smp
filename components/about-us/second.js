@@ -46,7 +46,7 @@ export default function Second() {
                 <strong className="text-gray-800">Because our client’s success is our success!</strong>
               </p>
   
-              <button className="px-6 py-3 bg-red-500 text-white rounded-lg font-medium shadow-md hover:bg-red-600 transition duration-300">
+              <button className="py-2 px-6 sm:px-10 rounded-sm transition-all shadow-xl duration-500 bg-[#ff5254] hover:bg-black hover:text-red-500 uppercase text-sm sm:text-lg md:text-lg cursor-pointer text-white font-semibold text-center">
                 BROWSE ALL CASE STUDIES
               </button>
             </div>

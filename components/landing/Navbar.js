@@ -29,7 +29,7 @@ export default function Navbar() {
   
   return (
     <>
-    <div className="bg-blue-700 p-4 ">
+    <div className="bg-[rgba(61,114,194,0.95)] p-4 ">
       {/* Container */}
       <div className="max-w-[1200px] mx-auto">
         {/* Top Section */}
@@ -56,15 +56,15 @@ export default function Navbar() {
         {/* Navigation Links */}
         <div>
           <ul className="flex flex-wrap justify-center md:justify-between items-center text-white uppercase pt-2 font-bold space-y-2 md:space-y-0">
-          <li className="px-4 cursor-pointer flex items-center gap-2 group relative ">
+          <li className="px-4 cursor-pointer flex items-center gap-2 group relative hover:text-red-500 ">
         About Us
         <span>
-          <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180" />
+          <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180 group-hover:text-red-500" />
         </span>
         <ul className="absolute top-full left-0 bg-gray-100 hidden rounded-md  group-hover:flex p-4 flex-col gap-4 min-w-[200px] max-w-[300px] items-center">
-          <li onClick={()=>handleClick('ourcompany')} className=" text-blue-500 hover:text-gray-700 text-md">Our Company</li>
-          <li onClick={()=>handleClick('team')} className="text-blue-500 hover:text-gray-700 text-md">Our Team</li>
-          <li onClick={()=>handleClick('services')} className="text-blue-500 hover:text-gray-700 text-md">Reviews</li>
+        <li onClick={()=>handleClick('ourcompany')} className=" text-[#4679c5] hover:text-red-500 text-[14px] font600">Our Company</li>
+        <li onClick={()=>handleClick('team')} className="text-[#4679c5] hover:text-red-500 text-[14px] font600">Our Team</li>
+        <li onClick={()=>handleClick('services')} className="text-[#4679c5] hover:text-red-500 text-[14px] font600">Reviews</li>
         </ul>
         </li>
 
@@ -73,7 +73,7 @@ export default function Navbar() {
             <li className="px-4 cursor-pointer">Our Clients</li>
             <li className="px-4 cursor-pointer">Training</li>
             <li className="px-4 cursor-pointer flex items-center gap-2 group">Resources <span> <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180" /></span></li>
-            <li className="bg-red-500 p-2 cursor-pointer md:p-4 shadow-sm rounded-md text-center">
+            <li className="p-2 cursor-pointer md:p-4 shadow-sm bg-[#ff5254] hover:text-red-500 rounded-md text-center hover:bg-black transition duration-300">
               Request a Free Strategy Session
             </li>
           </ul>

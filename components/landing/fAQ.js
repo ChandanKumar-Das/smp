@@ -65,7 +65,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className=" max-w-[1200px] mx-auto flex flex-col items-center px-4 py-10">
+    <div className=" max-w-[1200px] mx-auto flex flex-col items-center px-4 py-20">
       <h1 className="text-5xl font-bold px-10 text-blue-600 mb-8 text-center">
         Frequently Asked Questions Of African Safari Operators
       </h1>

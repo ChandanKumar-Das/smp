@@ -8,26 +8,26 @@ export default function First() {
   return (
     <div className="bg-gray-200 flex items-center justify-center">
    
-      <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row justify-between items-start px-6 pt-12 lg:px-20 lg:pt-16 gap-8">
+      <div className="max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row justify-between items-start  pt-12  lg:pt-16 gap-8">
         
         
         <div className="w-full lg:w-1/2 lg:sticky top-24 self-start">
           <Image
             src="https://safarimarketingpro.com/images/team-chinpal.png"
             alt="Website Development"
-            height={500}
-            width={500}
+            height={400}
+            width={400}
             className="w-full h-auto"
           />
         </div>
 
         {/* Text Section (Expands) */}
-        <div className="w-full lg:w-1/2 text-gray-600 space-y-6">
+        <div className="w-full lg:w-8/12 text-gray-600 space-y-6">
           <h1 className="text-4xl font-bold leading-tight text-[#3467d8]">
             Fall in love with your Customers' Problem!
           </h1>
           
-          <p className="text-lg leading-relaxed">
+          <p className="font-montserrat font-normal text-[18px] text-left text-[#787878] leading-[1.5] m-0">
             Chinu Pal, fondly known as the "king of sales," is a remarkable mentor
             who has revolutionized the safari industry with his exceptional guidance
             and unparalleled contributions to African tourism. His profound understanding
@@ -37,7 +37,7 @@ export default function First() {
 
           {showMore && (
             <div className="transition-all duration-300 ease-in-out">
-              <p className="text-lg leading-relaxed">
+              <p className="font-montserrat font-normal text-[18px] text-left text-[#787878] leading-[1.5] m-0 py-[15px] ">
                 Chin's unwavering mission is to have a direct impact
                 on the revenue models of safari businesses by freeing
                 them from their dependence on agents and educating them
@@ -45,7 +45,7 @@ export default function First() {
                 that if his clients give him a dollar, he must deliver 
                 ten dollars' worth of work.
               </p>
-              <p className="mt-2">
+              <p className="mt-2 font-montserrat font-normal text-[18px] text-left text-[#787878] leading-[1.5] m-0 ">
                 Chin's influence has not only been limited to the private
                 sector but has also reached out to significant government and
                 tourism organizations such as TANAPA, 748 Air, Tanzania Air, Airtel,

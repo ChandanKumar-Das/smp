@@ -1,8 +1,11 @@
 import DynamicNavbar from "../../../components/dymanicNavbar/dayamicNavbar";
+import ContactSection from "../../../components/landing/contact-section";
 import Footer from "../../../components/landing/footer";
 import NotCharge from "../../../components/landing/NotCharge";
 import OnlineTime from "../../../components/landing/Online";
 import First from "../../../components/team/fast";
+import Second from "../../../components/team/second";
+import Thired from "../../../components/team/thired";
 
 
 export default function Team(){
@@ -15,9 +18,12 @@ export default function Team(){
     return(
         <>
         <DynamicNavbar image={headerData.image} content={headerData.content1} content2={headerData.content2}/>
-        {/* <First/> */}
-       {/* <NotCharge/> */}
-       {/* <Footer/> */}
+        <First/>
+        <Second/>
+        <Thired/>
+        <ContactSection/>
+       <NotCharge/>
+       <Footer/>
         </>
     )
 }

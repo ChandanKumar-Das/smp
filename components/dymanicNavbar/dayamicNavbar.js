@@ -65,30 +65,17 @@ export default function DynamicNavbar({image,content,content2}) {
           <div>
             <ul className="flex flex-wrap justify-center md:justify-between items-center text-white uppercase pt-2 font-bold space-y-2 md:space-y-0">
               {/* Dropdown: About Us */}
-              <li className="px-4 cursor-pointer flex items-center gap-2 group relative">
-                About Us
-                <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180" />
-                <ul className="absolute top-full left-0 bg-gray-100 hidden rounded-md group-hover:flex p-4 flex-col gap-4 min-w-[200px] max-w-[300px] items-center shadow-lg">
-                  <li
-                    onClick={() => handleClick("ourcompany")}
-                    className="text-blue-500 hover:text-gray-700 text-md cursor-pointer"
-                  >
-                    Our Company
-                  </li>
-                  <li
-                    onClick={() => handleClick("team")}
-                    className="text-blue-500 hover:text-gray-700 text-md cursor-pointer"
-                  >
-                    Our Team
-                  </li>
-                  <li
-                    onClick={() => handleClick("services")}
-                    className="text-blue-500 hover:text-gray-700 text-md cursor-pointer"
-                  >
-                    Reviews
-                  </li>
-                </ul>
-              </li>
+              <li className="px-4 cursor-pointer flex items-center gap-2 group relative hover:text-red-500 ">
+        About Us
+        <span>
+          <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180 group-hover:text-red-500" />
+        </span>
+        <ul className="absolute top-full left-0 bg-gray-100 hidden rounded-md  group-hover:flex p-4 flex-col gap-4 min-w-[200px] max-w-[300px] items-center">
+        <li onClick={()=>handleClick('ourcompany')} className=" text-[#4679c5] hover:text-red-500 text-[14px] font600">Our Company</li>
+        <li onClick={()=>handleClick('team')} className="text-[#4679c5] hover:text-red-500 text-[14px] font600">Our Team</li>
+        <li onClick={()=>handleClick('services')} className="text-[#4679c5] hover:text-red-500 text-[14px] font600">Reviews</li>
+        </ul>
+        </li>
 
               <li className="px-4 cursor-pointer flex items-center gap-2 group">
                 Service
@@ -101,7 +88,7 @@ export default function DynamicNavbar({image,content,content2}) {
                 Resources
                 <ChevronDownIcon className="h-5 w-5 transition-transform duration-500 group-hover:rotate-180" />
               </li>
-              <li className="bg-red-500 p-2 cursor-pointer md:p-4 shadow-sm rounded-md text-center hover:bg-red-600 transition duration-300">
+              <li className=" p-2 cursor-pointer md:p-4 shadow-sm bg-[#ff5254] hover:text-red-500 rounded-md text-center hover:bg-black transition duration-300">
                 Request a Free Strategy Session
               </li>
             </ul>
@@ -111,7 +98,7 @@ export default function DynamicNavbar({image,content,content2}) {
             <p className="font-montserrat  font-bold text-[48px] text-center capitalize text-white leading-[1.4]">
              {content}
             </p>
-            <p className="font-montserrat  text-[18px] font-weight-500  text-white text-center leading-[1.2]">
+            <p className="font-montserrat  md:px-[100px] text-[18px] font-weight-500  text-white text-center leading-[1.2]">
               {content2}
             </p>
           </div>
